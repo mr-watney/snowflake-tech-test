@@ -91,7 +91,7 @@ if __name__ == "__main__":
         + ["fruit_veg"] * 25
         + ["sweets"] * 20
         + ["food"] * 25
-        + ["bws"] * 10
+#        + ["bws"] * 10 --don't know if this was on purpose or not but there is no "bws" list defined. Skipping it.
     )
 
     gen_id = "starter"
