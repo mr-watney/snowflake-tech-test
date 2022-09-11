@@ -22,10 +22,9 @@ conn.cursor().execute("USE SCHEMA VL_TASK")
 
 for d in ddl_files:
     with open(d, 'r') as f:
-        query=""
         query=f.read()
         print("Creating object from "+d+" file")
         conn.cursor().execute(query)
         f.close()
-print("Creating objects finished"
+print("Creating objects finished")
 conn.close()

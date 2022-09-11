@@ -1,4 +1,3 @@
-import os
 import os.path
 
 directory = "../input_data_generator/input_data/starter/transactions"

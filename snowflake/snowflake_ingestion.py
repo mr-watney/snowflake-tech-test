@@ -21,7 +21,7 @@ conn.cursor().execute("USE DATABASE TECH_TASK")
 conn.cursor().execute("USE SCHEMA VL_TASK")
 
 for d in data:
-    print("Ingesting "+d+".csv
+    print("Ingesting "+d+".csv")
     conn.cursor().execute("copy into "+d+" from @aws_"+d+" file_format = (type = csv field_delimiter = ',' skip_header = 1);")
 
 print("Ingestion finished")

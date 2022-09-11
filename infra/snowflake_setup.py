@@ -25,7 +25,7 @@ print("Database TECH_TASK created")
 conn.cursor().execute("USE DATABASE TECH_TASK")
 print("Switched to database TECH_TASK")
 conn.cursor().execute("CREATE SCHEMA IF NOT EXISTS VL_TASK")
-print("Database VL_TASK created")
+print("Schema VL_TASK created")
 conn.cursor().execute("USE SCHEMA VL_TASK")
 print("Switched to schema VL_TASK")
 for d in data:
