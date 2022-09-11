@@ -9,7 +9,7 @@ ROLE = 'ACCOUNTADMIN'
 AWS_KEY_ID = os.getenv('AWS_SERVER_PUBLIC_KEY')
 AWS_SECRET_KEY = os.getenv('AWS_SERVER_SECRET_KEY')
 
-data = ['products','customers','transactions']
+data = ['products', 'customers', 'transactions']
 
 conn = snowflake.connector.connect(
     user=USER,
